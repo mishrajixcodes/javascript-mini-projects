@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <h1 id="count">0</h1>
+    <div id="incr-decr">
+      <button class="button" id="decrement">-</button>
+      <button class="button" id="increment">+</button>
+    </div>
+    <div id="input">
+      <label for="input-block">Increment/Decrement by:</label>
+      <input type="number" name="input-block"  id="input-field" value="1" min="1" max="10" />
+    </div>
+    <button id="reset-btn" class="button">Reset</button>
+    <p>
+      Keyboard shortcuts: + to increment, - to decrement, Page Up/Down to change
+      step value
+    </p>
+  </body>
+</html>

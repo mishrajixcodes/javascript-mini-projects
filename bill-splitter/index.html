@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bill Splitter</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="input-container">
+        <p>Bill</p>
+        <div class="input-amount-container">
+          <label for="input-amount">₹</label>
+          <input type="number" id="input-amount" name="input-amount" />
+        </div>
+
+        <div class="tip-container">
+          <label for="btn-tip">Select Tip </label>
+          <div class="btn-tip" name="btn-tip">
+            <button class="btn">5%</button>
+            <button class="btn">10%</button>
+            <button class="btn">15%</button>
+            <button class="btn">25%</button>
+            <button class="btn">50%</button>
+            <button class="btn">75%</button>
+          </div>
+
+          <div class="custom-tip">
+            <input
+              type="number"
+              class="gray-input"
+              placeholder="Custom Tip in Percentage"
+              id="custom-tip-input"
+            />
+          </div>
+        </div>
+
+        <div class="people-container">
+          <label for="number-of-people-input">Number of People</label>
+          <input
+            type="number"
+            name="number-of-people-input"
+            id="number-of-people-input"
+            placeholder="No of People"
+            class="gray-input"
+          />
+        </div>
+        <button class="generate-bill-btn">Generate Bill</button>
+      </div>
+      <div class="output-container">
+        <h4 id="tip-amount-output">Tip Amount <span></span></h4>
+        <h4 id="total-amount-output">Total <span></span></h4>
+        <h4 id="each-person-bill-output">Each Person Bill <span></span></h4>
+        <button class="reset-btn">Reset</button>
+      </div>
+    </main>
+  </body>
+</html>
